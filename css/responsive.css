@@ -1,0 +1,115 @@
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 13px;
+  }
+  .containerFull {
+    padding: 0 15px;
+  }
+  .header {
+    padding: 5px 0;
+  }
+  .leftLogo {
+    width: 150px;
+  }
+  .leftLogo img {
+    width: 150px !important;
+  }
+  .stricky-fixed .leftLogo {
+    width: 65px;
+  }
+  .large_heading {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .btnBanner {
+    font-size: 12px;
+  }
+  .small_heading {
+    font-size: 20px;
+  }
+  section {
+    overflow: inherit;
+    padding: 40px 0;
+  }
+  .heading {
+    font-size: 20px;
+    line-height: 31px;
+  }
+  .sub_heading {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .offcanvas-end {
+    width: 320px;
+  }
+  .offcanvas-body {
+    overflow-x: hidden;
+    padding: 0rem 1rem;
+  }
+
+}
+
+@media (min-width: 568px) and (max-width: 826px) {
+
+}
+
+@media (max-width: 568px) {
+
+}
+
+@media (max-width: 436px) {
+ 
+  
+}
+@media (max-width: 768px) {
+  
+}
+/* max width 1280px  */
+@media (max-width: 1280px) {
+ 
+}
+@media (max-width: 1180px) {
+  
+}
+@media (min-width: 1081px) {
+  
+ 
+}
+@media (max-width: 1080px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+  .containerFull {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 990px) {
+  
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+  .containerFull {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1600px) {
+  .containerFull {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
