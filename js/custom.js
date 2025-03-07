@@ -183,11 +183,115 @@ $(function () {
 document.addEventListener("DOMContentLoaded", () => {
   const lenis = new Lenis();
 
-  lenis.on('scroll', ScrollTrigger.update);
+  lenis.on("scroll", ScrollTrigger.update);
 
   gsap.ticker.add((time) => {
     lenis.raf(time * 1000); // Convert time from seconds to milliseconds
   });
 
   gsap.ticker.lagSmoothing(0);
+});
+// image revel effect
+document.addEventListener("DOMContentLoaded", function () {
+  const imgBoxes = document.querySelectorAll(".animated .img_box");
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  function handleScroll() {
+    imgBoxes.forEach((imgBox) => {
+      if (isInViewport(imgBox)) {
+        imgBox.classList.add("reveal"); // Add animation class
+      }
+    });
+  }
+
+  // Run when scrolling
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleScroll); // Adjust if resizing affects visibility
+
+  // Initial check in case elements are already in view
+  handleScroll();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const createOdometer = (el, value) => {
+    const odometer = new Odometer({
+      el: el,
+      value: 0, // Start from zero
+    });
+
+    let hasRun = false; // Prevent multiple executions
+
+    const options = {
+      threshold: [0, 0.9],
+    };
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !hasRun) {
+          odometer.update(value); // Start counting
+          hasRun = true; // Ensure it only runs once
+          observer.unobserve(el); // Stop observing after first trigger
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+    observer.observe(el);
+  };
+
+  // Initialize odometer when it's in viewport
+  const ExpOdometer = document.querySelector(".exp-odometer");
+  if (ExpOdometer) {
+    createOdometer(ExpOdometer, 12); // Change '12' to your desired number
+  }
+});
+
+$(document).ready(function () {
+  $(".testimonialSlider").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    prevArrow:
+      "<button type='button' class='slick-prev pull-left'><i class='bi bi-chevron-left'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next pull-right'><i class='bi bi-chevron-right'></i></button>",
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    vertical: true, // Enable vertical sliding
+    verticalSwiping: true, // Allow swiping vertically
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+        },
+      },
+    ],
+  });
 });

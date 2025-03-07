@@ -289,7 +289,35 @@ $projects = [
         "view_more_link" => "#"
     ]
 ];
+
+$imagePairs = [
+    [
+        'before' => 'images/compair1.jpg',
+        'after' => 'images/compair2.jpg',
+        'title' => 'Grand Plaza Mall - Retail',
+        'client_name' => 'Grand Properties',
+        'location' => 'Thane',
+        'design_team' => 'Amit Patel | Sneha Desai'
+    ],
+    [
+        'before' => 'images/compair1.jpg',
+        'after' => 'images/compair2.jpg',
+        'title' => 'Skyline Towers - Residential',
+        'client_name' => 'Skyline Developers',
+        'location' => 'Mumbai',
+        'design_team' => 'Rahul Verma | Neha Kapoor'
+    ],
+    [
+        'before' => 'images/compair1.jpg',
+        'after' => 'images/compair2.jpg',
+        'title' => 'City Center - Commercial',
+        'client_name' => 'Urban Infra',
+        'location' => 'Pune',
+        'design_team' => 'Vikram Ahuja | Priya Mehta'
+    ]
+];
 ?>
+
 
 
 
@@ -309,6 +337,13 @@ $projects = [
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="images/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="
+    https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css
+    " rel="stylesheet">
+    <script defer src="
+            https://cdn.jsdelivr.net/npm/odometer@0.4.8/odometer.min.js
+            ">
+            </script>
 
 </head>
 
@@ -528,10 +563,64 @@ $projects = [
 
 
     </div>
+    <section class="our_clients">
+        <div class="containerFull">
+            <div class=" our-client-title">
+                <h4 class="fontHeading heading  " data-aos="fade-up" data-aos-duration="1000">
+                    Corporate Clients
+
+                </h4>
+                <div class="underline" data-aos="fade-left" data-aos-duration="1000"></div>
+
+
+            </div>
+            <?php
+            $images = [
+                "laxmi.jpg",
+                "atul.jpg",
+                "logo7.jpg",
+                "logo10.jpg",
+                "logo9.jpg",
+                "logo8.jpg",
+                "logo6.jpg",
+                "logo4.jpg",
+                "logo1.jpg",
+                "woodstock.jpg",
+                "usd.jpg",
+                "sejal.jpg",
+                "s.jpg",
+                "royal.jpg",
+                "nitya.jpg",
+                "modis.jpg",
+                "mehta.jpg",
+                "mark.jpg",
+                "manisha.jpg"
+            ];
+            ?>
+
+
+            <div class=" swiper client_slider mt-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <?php foreach ($images as $image): ?>
+                        <div class="swiper-slide">
+
+                            <div class="img_box">
+
+                                <img src="images/clients/<?= $image; ?>" alt="">
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination2"></div> -->
+            </div>
+
+        </div>
+    </section>
     <section class="about_home outline-bg">
         <div class="containerFull">
             <div class="row">
-                <div class="col-lg-6 pe-5">
+                <div class="col-lg-6 pe-5 animated">
                     <div class="img_box">
                         <img src="images/about.jpg" alt="">
 
@@ -542,8 +631,11 @@ $projects = [
                             <span> Architects</span>
                         </div>
                         <div class="exp ">
-                            <div class="number fontHeading">
-                                19
+                            <div class="number fontHeading p-1 ">
+                                <div class="exp-odometer">
+
+                                    0
+                                </div>
                             </div>
                             <div class="text-content fontHeading">
                                 Years of <br>
@@ -558,20 +650,21 @@ $projects = [
                 </div>
                 <div class="col-lg-6">
 
-                    <h5 class="fontHeading  text_dark_gold title">
+                    <h5 class="fontHeading  text_dark_gold title" data-aos="flip-up" data-aos-duration="1000">
                         Welcome To Horizon
                         Architects
                     </h5>
 
-                    <h4 class="fontHeading  fontWeight700 heading mt-4">
+                    <h4 class="fontHeading  fontWeight700 heading mt-4" data-aos="fade-up" data-aos-duration="1000">
                         Acknowledgment
                     </h4>
 
-                    <h5 class="text-capitalize fontHeading  text_primary title mt-4">
+                    <h5 class="text-capitalize fontHeading  text_primary title mt-4" data-aos="fade-up"
+                        data-aos-duration="1050">
                         Architecture is a freedom that one should express.
                     </h5>
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1070">
                         Reflecting on this journey, I extend my deepest gratitude to all who have been instrumental in
                         shaping my path
                         and the growth of Horizon Architects.
@@ -585,7 +678,7 @@ $projects = [
 
                     </p>
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1090">
                         I am grateful to my mentors, Mr. Sanjay Puri and Mr. Jayesh Shah, for their guidance in
                         planning, execution,
                         and building professional confidence. Special thanks to my partner, Bhavin Modi—our journey from
@@ -593,7 +686,7 @@ $projects = [
                     </p>
 
 
-                    <div class="mt-4">
+                    <div class="mt-4" data-aos="fade-up" data-aos-duration="1100">
                         <a class="btnHeader" href="">
                             Know More | <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -603,6 +696,7 @@ $projects = [
 
         </div>
     </section>
+
     <section class="about_home outline-bg-2 pt-2">
         <div class="containerFull">
             <div class="row mt-5">
@@ -614,7 +708,7 @@ $projects = [
                         Architects
                     </h5> -->
 
-                    <h4 class="fontHeading  fontWeight700 heading">
+                    <h4 class="fontHeading  fontWeight700 heading" data-aos="flip-up" data-aos-duration="1000">
                         About Horizon
                     </h4>
 
@@ -622,7 +716,7 @@ $projects = [
                         Architecture is a freedom that one should express.
                     </h5> -->
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1000">
                         Founded with passion and driven by innovation, Horizon Architects excels in providing end-to-end
                         architectural
                         solutions to complex planning and regulatory challenges. Under the leadership of Hemal Shah, who
@@ -638,7 +732,7 @@ $projects = [
 
                     </p>
 
-                    <p class="mt-4">
+                    <p class="mt-4" data-aos="fade-up" data-aos-duration="1030">
                         Horizon Architects collaborates with Mumbai, Thane, and other regions' leading developers to
                         create
                         transformative residential complexes, commercial hubs, office buildings, religious structures,
@@ -649,13 +743,13 @@ $projects = [
                     </p>
 
 
-                    <div class="mt-4">
+                    <div class="mt-4" data-aos="fade-up" data-aos-duration="1050">
                         <a class="btnHeader" href="">
                             Know More | <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 ps-5">
+                <div class="col-lg-6 ps-5 animated">
                     <div class="img_box">
                         <img src="images/hemal.jpg" alt="">
 
@@ -684,6 +778,269 @@ $projects = [
 
         </div>
     </section>
+    <section class="cta2">
+        <div class="containerFull">
+
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h3 class="large_heading fontHeading fontWeight500 text-white">
+
+
+                        Get in Touch <br>
+                        <span class="d-inline-block ms-5">and Let's Get it Done</span>
+                    </h3>
+
+                </div>
+                <div class="col-lg-4">
+
+                    <div class="item_cta">
+                        <p class="text-white-50">
+                            Give us a call
+                        </p>
+                        <a href="tel:02226136658" class="d-block text-white sub_heading fontHeading mt-2">
+                            022 2613 6658
+                        </a>
+
+                    </div>
+                    <div class="item_cta mt-4">
+                        <p class="text-white-50">
+                            Have a project in mind?
+                        </p>
+                        <a href="mailto:info@horizonarchitects.co.in" class="text-white sub_heading fontHeading mt-2">
+                            info@horizonarchitects.co.in
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="our_specialization">
+        <div class="containerFull">
+            <h5 class=" text-center fontHeading fontWeight600 text_dark_gold " data-aos="fade-up"
+                data-aos-duration="1000">
+                What We Offer
+            </h5>
+            <h4 class="mt-3 text_primary  heading text-center fontHeading fontWeight600" data-aos="fade-up"
+                data-aos-duration="1050">
+                We Are Experts In
+            </h4>
+
+            <div class="row mt-5">
+                <?php foreach ($services as $service): ?>
+                    <div class="col-lg-4  mb-4">
+                        <div class="card-container" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="card "><a href="hottub">
+                                    <div class="card--display">
+                                        <div class="">
+
+                                            <img loading="lazy" decoding="async" width="72" height="51"
+                                                src="images/icons/<?= $service['image']; ?>"
+                                                alt="<?= $service['title']; ?>">
+
+                                        </div>
+                                        <div class="icon-content">
+                                            <h4 class="fontHeading  mt-3"><?= $service['title']; ?></h4>
+                                            <p class="mt-2 fontWeight300"><?= $service['description']; ?></p>
+                                        </div>
+                                    </div>
+                                    <div class="card--hover">
+                                        <h2>Architecture Design</h2>
+                                        <p>We offer holistic design services including architecture, interior design, site
+                                            design, planning, and feasibility services
+                                        </p>
+                                        <p class="link">Click to see project</p>
+                                    </div>
+                                </a>
+                                <div class="card--border"></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                <?php endforeach; ?>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="our_projects">
+        <div class="containerFull">
+            <h5 class=" text-center fontHeading fontWeight600 text_dark_gold " data-aos="fade-up"
+                data-aos-duration="1000">
+                Portfolio
+            </h5>
+            <h4 class="mt-3 text_primary  heading text-center fontHeading fontWeight600" data-aos="fade-up"
+                data-aos-duration="1050">
+                Our Completed Architecture
+                Projects
+            </h4>
+
+            <div class="portfolio_slider mt-5 position-relative" data-aos="fade-up" data-aos-duration="1100">
+                <button class="portfolio_prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+                <div class="swiper portfolio_slider_main">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="project-block-one">
+                                <div class="inner-box">
+                                    <figure class="image-box"><img
+                                            src="https://azim.commonsupport.com/Inventarc/assets/images/project/project-2.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <h2 class="fontHeading"><a href="#">Minimal HOTEL PROJECT</a></h2>
+                                            <p class="position-relative text-white"><i
+                                                    class="fa-solid fa-location-dot"></i>Melbourne VIC, Australia</p>
+                                            <span class="big-text">01</span>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M262.62 336 342 256l-79.38-80m68.35 80H170"></path>
+                                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                                        d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z">
+                                                    </path>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-block-one">
+                                <div class="inner-box">
+                                    <figure class="image-box"><img
+                                            src="https://azim.commonsupport.com/Inventarc/assets/images/project/project-2.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <h2 class="fontHeading"><a href="#">Minimal HOTEL PROJECT</a></h2>
+                                            <p class="position-relative text-white"><i
+                                                    class="fa-solid fa-location-dot"></i>Melbourne VIC, Australia</p>
+                                            <span class="big-text">02</span>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M262.62 336 342 256l-79.38-80m68.35 80H170"></path>
+                                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                                        d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z">
+                                                    </path>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-block-one">
+                                <div class="inner-box">
+                                    <figure class="image-box"><img
+                                            src="https://azim.commonsupport.com/Inventarc/assets/images/project/project-2.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <h2 class="fontHeading"><a href="#">Minimal HOTEL PROJECT</a></h2>
+                                            <p class="position-relative text-white"><i
+                                                    class="fa-solid fa-location-dot"></i>Melbourne VIC, Australia</p>
+                                            <span class="big-text">03</span>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M262.62 336 342 256l-79.38-80m68.35 80H170"></path>
+                                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                                        d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z">
+                                                    </path>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-block-one">
+                                <div class="inner-box">
+                                    <figure class="image-box"><img
+                                            src="https://azim.commonsupport.com/Inventarc/assets/images/project/project-2.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <h2 class="fontHeading"><a href="#">Minimal HOTEL PROJECT</a></h2>
+                                            <p class="position-relative text-white"><i
+                                                    class="fa-solid fa-location-dot"></i>Melbourne VIC, Australia</p>
+                                            <span class="big-text">04</span>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M262.62 336 342 256l-79.38-80m68.35 80H170"></path>
+                                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                                        d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z">
+                                                    </path>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="project-block-one">
+                                <div class="inner-box">
+                                    <figure class="image-box"><img
+                                            src="https://azim.commonsupport.com/Inventarc/assets/images/project/project-2.jpg"
+                                            alt="">
+                                    </figure>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <h2 class="fontHeading"><a href="#">Minimal HOTEL PROJECT</a></h2>
+                                            <p class="position-relative text-white"><i
+                                                    class="fa-solid fa-location-dot"></i>Melbourne VIC, Australia</p>
+                                            <span class="big-text">05</span>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                    viewBox="0 0 512 512" height="1em" width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                        stroke-width="32"
+                                                        d="M262.62 336 342 256l-79.38-80m68.35 80H170"></path>
+                                                    <path fill="none" stroke-miterlimit="10" stroke-width="32"
+                                                        d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z">
+                                                    </path>
+                                                </svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="portfolio_next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
 
 
 
@@ -691,8 +1048,374 @@ $projects = [
 
 
 
+        </div>
+
+    </section>
+    <section class="coreCompetencies ">
+        <div class="containerFull">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-5 position-relative">
+                    <div class="item_left  d-flex  justify-content-center align-items-center outline-bg-3 ">
+                        <div class=" logo_item   p-5  text-center ">
+                            <img loading="lazy" decoding="async" src="images/logo.png" alt="Core Competencies">
+
+                            <h5 class="heading fontHeading text-center text-white mt-4">
+                                Core Competencies
+                            </h5>
 
 
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+
+                    <div class="item_coreCompetencies mb-4 p-5 ">
+                        <img src="images/icons/handshake.png" loading="lazy" decoding="async" width="60" alt="">
+                        <h4 class="fontHeading  sub_heading  mt-3">Planning Competence </h4>
+                        <p class="mt-3 text-white">We believe that planning is the key to making a project the best of
+                            what it should be. The simpler and efficient the plan, the better planning derives benefits
+                            in minimal space deficiency, elevation, and aesthetics.</p>
+                    </div>
+                    <div class="item_coreCompetencies mb-4 p-5 ">
+                        <img src="images/icons/design.png" loading="lazy" decoding="async" width="60" alt="">
+                        <h4 class="fontHeading  sub_heading  mt-3">Executional Workforce </h4>
+                        <p class="mt-3 text-white">We have one of the most passionate and hardworking strength of staff
+                            who deliver the most precise details of working and coordinated drawings with perplexing
+                            speed and simplicity. We evidently comprehend the best knowledge in terms of merging R.C.C.,
+                            Services, and liaisoning requirements. Keeping all updated and alert is the key. We make
+                            sure to stay connected digitally. We make sure that our drawings are tallied with the
+                            liasoning drawings. Our supervision on site is precise and thorough.</p>
+                    </div>
+                    <div class="item_coreCompetencies mb-4 p-5 ">
+                        <img src="images/icons/data-management.png" loading="lazy" decoding="async" width="60" alt="">
+                        <h4 class="fontHeading  sub_heading  mt-3">Integration Of Liasoning And Architectural Drawings
+                            Along With R.C.C And Services </h4>
+                        <p class="mt-3 text-white">Right from the design stage, we make sure that our data is conversant
+                            with the latest standards in approval and liaisoning. Our combined coordination with the
+                            liaisoning makes sure that the data that reaches our clients and then further to the site is
+                            amply matching the liaisoning drawings. We make sure that there is no difference between our
+                            Working Details and R.C.C. drawings, ensuring minimal hurdles for approvals and OC.</p>
+                    </div>
+                    <div class="item_coreCompetencies mb-4 p-5 ">
+                        <img src="images/icons/stock.png" loading="lazy" decoding="async" width="60" alt="">
+                        <h4 class="fontHeading  sub_heading  mt-3">Detailing And Interior Aesthetics </h4>
+                        <p class="mt-3 text-white">We stand tall as a separate Interior Design team with members who
+                            have more than 15 years of experience in detailing. Hence, we give end-to-end solutions
+                            inclusive of show flats, sample flats, grand entrance lobbies, typical floor lobbies,
+                            railings, and staircase details in the most modern and aesthetically detailed manner.</p>
+                    </div>
+                    <div class="item_coreCompetencies mb-4 p-5 ">
+                        <img src="images/icons/groth.png" loading="lazy" decoding="async" width="60" alt="">
+                        <h4 class="fontHeading  sub_heading  mt-3">Complete End To End Solutions </h4>
+                        <p class="mt-3 text-white">The structure/building remains our responsibility till the OC; hence
+                            service and speed is the key. Our coordination and service are smart as well as prompt,
+                            leaving minimal or no room for error.</p>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="cta2">
+        <div class="containerFull">
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-8">
+                    <h3 class="large_heading fontHeading fontWeight500 text-white text-center">
+
+
+                        Transform Your Space: Affordable & Elegant Design Solutions</span>
+                    </h3>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <a href="#" class="btn_1 ">Send Message</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="position-relative outline-bg">
+        <div class="containerFull">
+            <h5 class="fontHeading fontWeight600 text_dark_gold text-center" data-aos="fade-up"
+                data-aos-duration="1000">
+                Our Work
+            </h5>
+            <h4 class="text-center heading fontWeight700 mt-4" data-aos="fade-up" data-aos-duration="1030">
+                See Our Work
+            </h4>
+
+            <div class="mt-5 ImageCompair_main" data-aos="fade-up" data-aos-duration="1050">
+                <div class="ImageCompair swiper">
+                    <div class="swiper-wrapper">
+                        <?php foreach ($imagePairs as $index => $pair): ?>
+                            <div class="swiper-slide">
+                                <div>
+
+                                    <div class='item_compair bg_primary '>
+                                        <div class='img background-img' style="background:url('<?= $pair['before'] ?>')">
+                                        </div>
+                                        <div class='img foreground-img' style="background:url('<?= $pair['after'] ?>')">
+                                        </div>
+
+                                        <span class="mark-label before-label">Before</span>
+                                        <span class="mark-label after-label">After</span>
+
+                                        <input type="range" min="1" max="100" value="50" class="slider" name='slider'
+                                            id="slider">
+                                        <div class='slider-button'></div>
+                                    </div>
+                                    <div class="">
+                                        <div class="bg_primary px-5 py-4 d-flex justify-content-between align-items-center">
+
+                                            <div>
+
+                                                <h4 id="title" class="fontHeading small_heading fontWeight600  text-white">
+                                                    <?= $pair['title'] ?>
+                                                </h4>
+                                                <p id="client_info" class="fontWeight600 mt-3 text-white">CLIENT NAME -
+                                                    <?= $pair['client_name'] ?>
+                                                    | LOCATION - <?= $pair['location'] ?>
+                                                </p>
+
+                                                <p id="design_team" class="fontWeight600 mt-2 text-white">DESIGN TEAM -
+                                                    <?= $pair['design_team'] ?>
+                                                </p>
+                                            </div>
+
+
+
+                                            <div class="projects_btn  d-flex gap-3 ">
+                                                <button class="project-prev image-compair_prev">
+                                                    <i class="fa-solid fa-angle-left"></i>
+                                                </button>
+                                                <button class="project-next image-compair_next">
+                                                    <i class="fa-solid fa-angle-right"></i>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </section>
+    <section>
+        <div class="containerFull overflow-hidden">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="blog-title" data-aos="fade-right" data-aos-duration="1000">
+                        <span class="section-pre title text_dark_gold ">Upcoming <span
+                                class="highlight">News</span></span>
+                        <h2 class="section-title fontHeading heading text_primary ">Recent Blog &amp; News in <span
+                                class="highlight">Company</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5">
+                    <div class="blog-text-right d-flex justify-content-end" data-aos="fade-left"
+                        data-aos-duration="1000">
+                        <p>As buildings grow in complexity, architecture evolves into a multi-disciplinary field.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="blog-item shadow blog-card">
+                        <div class="blog-thumb">
+                            <img src="https://html.rrdevs.net/artima/assets/imgs/blog/blog-1.jpg" alt="Blog Image">
+                            <div class="blog-tag">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar text_primary"></i> June 10, 2023 </span>
+                                <span class="ms-4"><i class="fa fa-comments text_primary"></i> No Comments</span>
+                            </div>
+                            <h4 class="blog-title mt-2">Testing Sites And Apps With Blind Users</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="blog-item shadow blog-card">
+                        <div class="blog-thumb">
+                            <img src="https://html.rrdevs.net/artima/assets/imgs/blog/blog-1.jpg" alt="Blog Image">
+                            <div class="blog-tag">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar text_primary"></i> June 10, 2023 </span>
+                                <span class="ms-4"><i class="fa fa-comments text_primary"></i> No Comments</span>
+                            </div>
+                            <h4 class="blog-title mt-2">Testing Sites And Apps With Blind Users</h4>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="blog-item shadow blog-card">
+                        <div class="blog-thumb">
+                            <img src="https://html.rrdevs.net/artima/assets/imgs/blog/blog-1.jpg" alt="Blog Image">
+                            <div class="blog-tag">
+                                <p>Business</p>
+                            </div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span><i class="fa fa-calendar text_primary"></i> June 10, 2023 </span>
+                                <span class="ms-4"><i class="fa fa-comments text_primary"></i> No Comments</span>
+                            </div>
+                            <h4 class="blog-title mt-2">Testing Sites And Apps With Blind Users</h4>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="blackElement bgGrey pt-lg-0 counter">
+        <div class="containerFull">
+            <div class="row">
+                <div class="col-lg-5" data-aos="zoom-in-left">
+                    <div class="leftContact shadow">
+                        <h4 class="text-white heading fontWeight600">Get a quote <span class="">now</span>
+                        </h4>
+                        <div class="formItemHome mt-4">
+                            <input type="text" name="name" placeholder="Name" required>
+                        </div>
+                        <div class="formItemHome">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="formItemHome">
+                            <input type="tel" name="phone" placeholder="Phone Number" required>
+                        </div>
+                        <div class="formItemHome">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="formItemHome mb-0">
+                            <button class="btn_1 w-100">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1" data-aos="zoom-in-right">
+                    <div class="testimonialSlider">
+                        <div class="itemTestimonial">
+                            <div class="innerTestimonial">
+                                <div class="quoteIcon">
+                                    <img src="images/icons/left-quotes-sign.svg" alt="">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vel iure
+                                    exercitationem excepturi. Veniam libero voluptates blanditiis dolor sunt similique
+                                    veritatis repellat. Expedita vel nemo eligendi deserunt, nesciunt tempora
+                                    voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                    cupiditate fugiat ab incidunt adipisci rerum quod officia dolore ipsum eveniet
+                                    tempore facere, nisi velit pariatur. Accusamus quia laboriosam sed necessitatibus!
+                                </p>
+
+                            </div>
+                            <div class="authorBottom">
+                                <div class="authoreImg">
+                                    <img src="images/author.jpg" alt="">
+                                </div>
+                                <div class="authorRight">
+                                    <h4 class="small_heading  fontWeight600">Willen Adrew</h4>
+                                    <p class="text_secondary">xyz Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemTestimonial">
+                            <div class="innerTestimonial">
+                                <div class="quoteIcon">
+                                    <img src="images/icons/left-quotes-sign.svg" alt="">
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni vel iure
+                                    exercitationem excepturi. Veniam libero voluptates blanditiis dolor sunt similique
+                                    veritatis repellat. Expedita vel nemo eligendi deserunt, nesciunt tempora
+                                    voluptatum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                                    cupiditate fugiat ab incidunt adipisci rerum quod officia dolore ipsum eveniet
+                                    tempore facere, nisi velit pariatur. Accusamus quia laboriosam sed necessitatibus!
+                                </p>
+
+                            </div>
+                            <div class="authorBottom">
+                                <div class="authoreImg">
+                                    <img src="images/author.jpg" alt="">
+                                </div>
+                                <div class="authorRight">
+                                    <h4 class="small_heading  fontWeight600">Willen Adrew</h4>
+                                    <p class="text_secondary">xyz Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-lg-5">
+                <div class="col-lg-4" data-aos="zoom-in-up">
+                    <div class="itemRatio">
+                        <div class="iconRatio">
+                            <img src="images/icons/experience-2.svg" alt="">
+                        </div>
+                        <div class="rationRight">
+                            <p class="title  fontWeight600 fontHeading">Projects</p>
+                            <h3 class="large_heading fontWeight700 text_primary"><span class="counter-value"
+                                    data-count="100"></span>+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in-up">
+                    <div class="itemRatio">
+                        <div class="iconRatio">
+                            <img src="images/icons/experience-4.svg" alt="">
+                        </div>
+                        <div class="rationRight">
+                            <p class="title  fontWeight600 fontHeading">Clients Satisfactions</p>
+                            <h3 class="large_heading fontWeight700 text_primary"><span class="counter-value"
+                                    data-count="500"></span>+</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="zoom-in-up">
+                    <div class="itemRatio">
+                        <div class="iconRatio">
+                            <img src="images/icons/experience-3.svg" alt="">
+                        </div>
+                        <div class="rationRight">
+                            <p class="title  fontWeight600 fontHeading">Employees</p>
+                            <h3 class="large_heading fontWeight700 text_primary"><span class="counter-value"
+                                    data-count="2420"></span>+</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <?php include 'include/footer.php'; ?>
 
     </div>
@@ -721,6 +1444,91 @@ $projects = [
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+        });
+    </script>
+    <script>
+        var swiper2 = new Swiper(".client_slider", {
+            spaceBetween: 20,
+            slidesPerView: 6,
+            // centeredSlides: true,
+
+            autoplay: {
+                delay: 0,
+
+
+                disableOnInteraction: false,
+            },
+            speed: 3000,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+            },
+            navigation: false
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("input[name='slider']").on("input change", function () {
+                const sliderPos = $(this).val();
+                const parent = $(this).closest('.item_compair');
+                parent.find('.foreground-img').css('width', `${sliderPos}%`);
+                parent.find('.slider-button').css('left', `calc(${sliderPos}% - 18px)`);
+
+                if (sliderPos >= 99) {
+                    parent.find('.after-label').fadeOut();
+                } else {
+                    parent.find('.after-label').fadeIn();
+                }
+
+                if (sliderPos <= 1) {
+                    parent.find('.before-label').fadeOut();
+                } else {
+                    parent.find('.before-label').fadeIn();
+                }
+
+            });
+        });
+    </script>
+    <script>
+        var swiper3 = new Swiper(".ImageCompair", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination3",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".image-compair_next",
+                prevEl: ".image-compair_prev",
+            },
+
+        });
+    </script>
+    <script>
+        var swiper3 = new Swiper(".portfolio_slider_main", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            //     disableOnInteraction: false,
+            // },
+            pagination: {
+                el: ".swiper-pagination3",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".portfolio_next",
+                prevEl: ".portfolio_prev",
+            },
+
         });
     </script>
 
