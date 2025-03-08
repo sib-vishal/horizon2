@@ -783,7 +783,8 @@ $imagePairs = [
 
             <div class="row align-items-center">
                 <div class="col-lg-8">
-                    <h3 class="large_heading fontHeading fontWeight500 text-white">
+                    <h3 class="large_heading fontHeading fontWeight500 text-white" data-aos="fade-up"
+                        data-aos-duration="1000">
 
 
                         Get in Touch <br>
@@ -793,7 +794,7 @@ $imagePairs = [
                 </div>
                 <div class="col-lg-4">
 
-                    <div class="item_cta">
+                    <div class="item_cta" data-aos="fade-up" data-aos-duration="1000">
                         <p class="text-white-50">
                             Give us a call
                         </p>
@@ -802,7 +803,7 @@ $imagePairs = [
                         </a>
 
                     </div>
-                    <div class="item_cta mt-4">
+                    <div class="item_cta mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <p class="text-white-50">
                             Have a project in mind?
                         </p>
@@ -1077,7 +1078,7 @@ $imagePairs = [
                             what it should be. The simpler and efficient the plan, the better planning derives benefits
                             in minimal space deficiency, elevation, and aesthetics.</p>
                     </div>
-                    <div class="item_coreCompetencies mb-4 p-5 ">
+                    <div class="item_coreCompetencies mb-4 p-5 " data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/icons/design.png" loading="lazy" decoding="async" width="60" alt="">
                         <h4 class="fontHeading  sub_heading  mt-3">Executional Workforce </h4>
                         <p class="mt-3 text-white">We have one of the most passionate and hardworking strength of staff
@@ -1087,7 +1088,7 @@ $imagePairs = [
                             sure to stay connected digitally. We make sure that our drawings are tallied with the
                             liasoning drawings. Our supervision on site is precise and thorough.</p>
                     </div>
-                    <div class="item_coreCompetencies mb-4 p-5 ">
+                    <div class="item_coreCompetencies mb-4 p-5 " data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/icons/data-management.png" loading="lazy" decoding="async" width="60" alt="">
                         <h4 class="fontHeading  sub_heading  mt-3">Integration Of Liasoning And Architectural Drawings
                             Along With R.C.C And Services </h4>
@@ -1097,7 +1098,7 @@ $imagePairs = [
                             amply matching the liaisoning drawings. We make sure that there is no difference between our
                             Working Details and R.C.C. drawings, ensuring minimal hurdles for approvals and OC.</p>
                     </div>
-                    <div class="item_coreCompetencies mb-4 p-5 ">
+                    <div class="item_coreCompetencies mb-4 p-5 " data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/icons/stock.png" loading="lazy" decoding="async" width="60" alt="">
                         <h4 class="fontHeading  sub_heading  mt-3">Detailing And Interior Aesthetics </h4>
                         <p class="mt-3 text-white">We stand tall as a separate Interior Design team with members who
@@ -1105,7 +1106,7 @@ $imagePairs = [
                             inclusive of show flats, sample flats, grand entrance lobbies, typical floor lobbies,
                             railings, and staircase details in the most modern and aesthetically detailed manner.</p>
                     </div>
-                    <div class="item_coreCompetencies mb-4 p-5 ">
+                    <div class="item_coreCompetencies mb-4 p-5 " data-aos="fade-up" data-aos-duration="1000">
                         <img src="images/icons/groth.png" loading="lazy" decoding="async" width="60" alt="">
                         <h4 class="fontHeading  sub_heading  mt-3">Complete End To End Solutions </h4>
                         <p class="mt-3 text-white">The structure/building remains our responsibility till the OC; hence
@@ -1127,13 +1128,14 @@ $imagePairs = [
 
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-8">
-                    <h3 class="large_heading fontHeading fontWeight500 text-white text-center">
+                    <h3 class="large_heading fontHeading fontWeight500 text-white text-center" data-aos="fade-up"
+                        data-aos-duration="1000">
 
 
                         Transform Your Space: Affordable & Elegant Design Solutions</span>
                     </h3>
 
-                    <div class="d-flex justify-content-center mt-5">
+                    <div class="d-flex justify-content-center mt-5" data-aos="fade-up" data-aos-duration="1000">
                         <a href="#" class="btn_1 ">Send Message</a>
                     </div>
 
@@ -1412,6 +1414,77 @@ $imagePairs = [
                                     data-count="2420"></span>+</h3>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="containerFull">
+            <h3 class="small_heading text_primary text-center fontWeight600 aos-init aos-animate" data-aos="zoom-in-up">
+                Contact Us</h3>
+            <h4 class="heading text-center mt-3 fontWeight600 aos-init aos-animate" data-aos="zoom-in-up">Get In Touch
+            </h4>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 aos-init aos-animate" data-aos="zoom-in-up">
+                    <p class="mt-3 text-center">For inquiries, collaborations, or consultations, reach out to Horizon
+                        Architects—we're here to bring your vision to life. Contact us today to discuss your
+                        architectural needs and explore innovative design solutions.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-lg-5 mt-4">
+                <div class="col-lg-6">
+                    <div class="leftContactHome">
+                        <div class="itemContact  aos-init" data-aos="zoom-in-up">
+                            <div class="leftIcon mt-0">
+                                <div class="iconEle ">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                </div>
+                                <h4 class="small_heading fontWeight600">Address</h4>
+                            </div>
+                            <div class="rightContact">
+                                <strong>Head Office</strong>
+                                <p class="mb-4">Topiwala Centre, 2ND FLOOR, OFFICE UNIT NO.1, Washington Plaza, Swami Vivekanand
+                                    Marg, Goregaon West, Mumbai Suburban, MH-400104</p>
+                                <strong> Office 2</strong>
+                                <p> 303, Galaxy Arcade, 10, M. G.Road, Opp Bank of Baroda, Vile Parle (E), Mumbai-57</p>
+                            </div>
+                        </div>
+                        <div class="itemContact aos-init" data-aos="zoom-in-up">
+                            <div class="leftIcon">
+                                <div class="iconEle ">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <h4 class="small_heading fontWeight600">Phone Number</h4>
+                            </div>
+                            <div class="rightContact">
+                                <p><a href="tel: 022 2613 6658"> 022 2613 6658</a></p>
+
+                            </div>
+                        </div>
+                        <div class="itemContact aos-init" data-aos="zoom-in-up">
+                            <div class="leftIcon">
+                                <div class="iconEle ">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <h4 class="small_heading fontWeight600">Email Address</h4>
+                            </div>
+                            <div class="rightContact">
+                                <p><a href="mailto:info@horizonarchitects.co.in">info@horizonarchitects.co.in</a></p>
+                                <p><a href="mailto:horizonarchitects@gmail.com">horizonarchitects@gmail.com</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mapRight">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d25164.100081752367!2d72.846702!3d19.163451!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b41b55c2cf%3A0xdcac34199d7f880b!2sHorizon%20Architects!5e1!3m2!1sen!2sin!4v1741413147051!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </div>
             </div>
         </div>
