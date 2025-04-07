@@ -48,7 +48,7 @@
 						Contact Us
 					</h4>
 					<div class="itemFooterContact">
-						<div class="iconContact mt-4">
+						<!-- <div class="iconContact mt-4">
 							<div class="iconLeft">
 								<i class="fa fa-map-marker-alt"></i>
 							</div>
@@ -56,7 +56,7 @@
 								<small>Address</small>
 								<p>No.48, 25th, New York USA</p>
 							</div>
-						</div>
+						</div> -->
 						<div class="iconContact mt-4">
 							<div class="iconLeft">
 								<i class="fa fa-phone"></i>
@@ -106,8 +106,8 @@
 
 			<div class="credits">
 
-				Designed &amp; Developed by <a class="text-dark" target="_blank"
-					href="http://sibinfotech.com/"><strong>SIB Infotech</strong></a>
+				<!-- Designed &amp; Developed by <a class="text-dark" target="_blank"
+					href="http://sibinfotech.com/"><strong>SIB Infotech</strong></a> -->
 			</div>
 
 		</div>

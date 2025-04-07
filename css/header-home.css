@@ -1,0 +1,86 @@
+.header-home {
+    width: 100%;
+    position: absolute;
+    padding: 15px 20px;
+    z-index: 998;
+  }
+ .header-home .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ .header-home .logo {
+    width: 70px;
+  }
+ .header-home .logo img {
+    width: 100%;
+  }
+ .header-home .menu-btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 2000;
+  }
+ .header-home .menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1501;
+  }
+  .sidebar-close{
+    width: 30px;
+    height: 30px; 
+  
+    top: 60px;
+    left: 60px;
+    position: absolute;
+  }
+  .sidebar-close-line {
+    margin-top: 10px;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    z-index:2000 ;
+    cursor: pointer;
+  
+  }
+ .sidebar-close-line:first-child {
+    transform: rotate(45deg);
+  }
+ .sidebar-close-line:last-child {
+    transform: rotate(-45deg);
+  }
+ .sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #0b4aa2de;
+    backdrop-filter: blur(4px);
+    z-index: 999;
+    padding: 80px 20px 20px;
+    overflow-y: auto;
+  }
+  
+ .sidebar-menu {
+    list-style: none;
+    text-align: center;
+  }
+  
+ .sidebar-menu li {
+    margin-bottom: 12px;
+  }
+ .sidebar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease;
+  }
+  .sidebar-menu a:hover {
+    color: var(--dark-gold);
+}

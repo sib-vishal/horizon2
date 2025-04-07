@@ -337,6 +337,7 @@ $imagePairs = [
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="images/logo.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/header-home.css">
     <link href="
     https://cdn.jsdelivr.net/npm/odometer@0.4.8/themes/odometer-theme-default.min.css
     " rel="stylesheet">
@@ -349,7 +350,7 @@ $imagePairs = [
 
 <body onload="createCaptcha();">
     <div class="wrapper ">
-        <?php include 'include/header.php'; ?>
+        <?php include 'include/header-home.php'; ?>
 
         <div class="banner_swiper position-relative">
             <div class="swiper main_banner_swiper">
@@ -358,43 +359,53 @@ $imagePairs = [
                         <div class="slide_content">
                             <div class="img_box">
 
-                                <img src="images/banner/banner.jpg" alt="">
+                                <img src="images/banner/banner-1.jpg" alt="">
                             </div>
 
                             <div class="containerFull">
 
                                 <div class="content">
-                                    <h1 class="fontHeading large_heading fontWeight600">Welcome to Horizon Architects
+                                    <h1 class="fontHeading large_heading fontWeight600"> VARDAAN
                                     </h1>
-                                    <p class="mt-3">We are a renowned architectural firm committed to delivering<br />
-                                        high-quality,
-                                        affordable, and sustainable projects.</p>
+                                    <p class="mt-3">Blending functionality with aesthetics, we create timeless,
+                                        inspiring spaces <br/> that reflect personality, enhance comfort, and elevate everyday
+                                        living</p>
+
+                                    <div class="mt-4">
+                                        <a class="btnHeader" href="">
+                                            Explore Project | <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
 
                                 </div>
                             </div>
 
                         </div>
-
-
                     </div>
                     <div class="swiper-slide">
                         <div class="slide_content">
                             <div class="img_box">
 
-                                <!-- <img src="images/banner/banner-2.jpg" alt=""> -->
-                                <video autoplay="" muted="" loop="" id="myVideo">
+                                <img src="images/banner/banner-2.jpg" alt="">
+                                <!-- <video autoplay="" muted="" loop="" id="myVideo">
                                     <source src="https://demo.awaikenthemes.com/assets/videos/inspaire-video.mp4"
                                         type="video/mp4">
-                                </video>
+                                </video> -->
                             </div>
                             <div class="containerFull">
 
                                 <div class="content">
-                                    <h2 class="fontHeading large_heading fontWeight600">Welcome to Horizon Architects
+                                    <h2 class="fontHeading large_heading fontWeight600">Smarter Design, Greater Returns
                                     </h2>
                                     <p class="mt-3">We are a renowned architectural firm committed to delivering<br />
                                         high-quality,
                                         affordable, and sustainable projects.</p>
+
+                                    <div class="mt-4">
+                                        <a class="btnHeader" href="">
+                                            See How We Innovate | <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
 
                                 </div>
                             </div>
@@ -403,20 +414,56 @@ $imagePairs = [
 
 
                     </div>
+                    <!-- <div class="swiper-slide">
+                        <div class="slide_content">
+                            <div class="img_box">
+
+                                <img src="images/banner/banner-3.jpg" alt="">
+
+                            </div>
+                            <div class="containerFull">
+
+                                <div class="content">
+                                    <h2 class="fontHeading large_heading fontWeight600">Lorem ipsum dolor sit.
+                                    </h2>
+                                    <p class="mt-3">Crafting Iconic Spaces for Two Decades<br />
+                                        high-quality,
+                                        affordable, and sustainable projects.</p>
+
+                                    <div class="mt-4">
+                                        <a class="btnHeader" href="">
+                                            See How We Innovate | <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div> -->
                     <div class="swiper-slide">
                         <div class="slide_content">
                             <div class="img_box">
 
-                                <img src="images/banner/banner-2.jpg" alt="">
+                                <img src="images/banner/awards-banner.jpg" alt="">
+
                             </div>
                             <div class="containerFull">
 
                                 <div class="content">
-                                    <h2 class="fontHeading large_heading fontWeight600">Welcome to Horizon Architects
+                                    <h2 class="fontHeading large_heading fontWeight600">Awards & Recognition
                                     </h2>
-                                    <p class="mt-3">We are a renowned architectural firm committed to delivering<br />
+                                    <p class="mt-3">Crafting Iconic Spaces for Two Decades<br />
                                         high-quality,
                                         affordable, and sustainable projects.</p>
+
+                                    <div class="mt-4">
+                                        <a class="btnHeader" href="">
+                                        See Our Accolades | <i class="fa-solid fa-arrow-right"></i>
+                                        </a>
+                                    </div>
 
                                 </div>
                             </div>
@@ -425,29 +472,6 @@ $imagePairs = [
 
 
                     </div>
-                    <div class="swiper-slide">
-                        <div class="slide_content">
-                            <div class="img_box">
-
-                                <img src="images/banner/banner-2.jpg" alt="">
-                            </div>
-                            <div class="containerFull">
-
-                                <div class="content">
-                                    <h2 class="fontHeading large_heading fontWeight600">Welcome to Horizon Architects
-                                    </h2>
-                                    <p class="mt-3">We are a renowned architectural firm committed to delivering<br />
-                                        high-quality,
-                                        affordable, and sustainable projects.</p>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
 
 
                 </div>
@@ -455,7 +479,7 @@ $imagePairs = [
 
             </div>
             <div class="swiper-pagination1 "></div>
-            <div class="scroll_down">
+            <!-- <div class="scroll_down">
                 <a class="" href="#">
 
                     <span class="scroll-text"><svg width="127" height="127" viewBox="0 0 127 127" fill="none"
@@ -557,13 +581,13 @@ $imagePairs = [
 
                 </a>
 
-            </div>
+            </div> -->
 
         </div>
 
 
     </div>
-    <section class="our_clients">
+    <!-- <section class="our_clients">
         <div class="containerFull">
             <div class=" our-client-title">
                 <h4 class="fontHeading heading  " data-aos="fade-up" data-aos-duration="1000">
@@ -611,13 +635,12 @@ $imagePairs = [
                         </div>
                     <?php endforeach; ?>
                 </div>
-                <!-- Add Pagination -->
-                <!-- <div class="swiper-pagination2"></div> -->
+                
             </div>
 
         </div>
-    </section>
-    <section class="about_home outline-bg">
+    </section> -->
+    <!-- <section class="about_home outline-bg">
         <div class="containerFull">
             <div class="row">
                 <div class="col-lg-6 pe-5 animated">
@@ -695,26 +718,21 @@ $imagePairs = [
             </div>
 
         </div>
-    </section>
+    </section> -->
 
-    <section class="about_home outline-bg-2 pt-2">
+    <!-- <section class="about_home outline-bg-2 pt-2">
         <div class="containerFull">
             <div class="row mt-5">
 
                 <div class="col-lg-6">
 
-                    <!-- <h5 class="fontHeading  text_dark_gold title">
-                        Welcome To Horizon
-                        Architects
-                    </h5> -->
+              
 
                     <h4 class="fontHeading  fontWeight700 heading" data-aos="flip-up" data-aos-duration="1000">
                         About Horizon
                     </h4>
 
-                    <!-- <h5 class="text-capitalize fontHeading  text_primary title mt-4">
-                        Architecture is a freedom that one should express.
-                    </h5> -->
+                
 
                     <p class="mt-4" data-aos="fade-up" data-aos-duration="1000">
                         Founded with passion and driven by innovation, Horizon Architects excels in providing end-to-end
@@ -754,31 +772,15 @@ $imagePairs = [
                         <img src="images/hemal.jpg" alt="">
 
                     </div>
-                    <!-- <div class="experience-box">
-                        <div class="img_logo">
-                            <span> Horizon</span> <br />
-                            <span> Architects</span>
-                        </div>
-                        <div class="exp ">
-                            <div class="number fontHeading">
-                                19
-                            </div>
-                            <div class="text-content fontHeading">
-                                Years of <br />
-                                Experience
-                            </div>
-
-                        </div>
-
-                    </div> -->
+                   
 
 
                 </div>
             </div>
 
         </div>
-    </section>
-    <section class="cta2">
+    </section> -->
+    <!-- <section class="cta2">
         <div class="containerFull">
 
             <div class="row align-items-center">
@@ -815,9 +817,9 @@ $imagePairs = [
             </div>
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="our_specialization">
+    <!-- <section class="our_specialization">
         <div class="containerFull">
             <h5 class=" text-center fontHeading fontWeight600 text_dark_gold " data-aos="fade-up"
                 data-aos-duration="1000">
@@ -866,9 +868,9 @@ $imagePairs = [
 
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="our_projects">
+    <!-- <section class="our_projects">
         <div class="containerFull">
             <h5 class=" text-center fontHeading fontWeight600 text_dark_gold " data-aos="fade-up"
                 data-aos-duration="1000">
@@ -1051,8 +1053,8 @@ $imagePairs = [
 
         </div>
 
-    </section>
-    <section class="coreCompetencies ">
+    </section> -->
+    <!-- <section class="coreCompetencies ">
         <div class="containerFull">
             <div class="row" data-aos="fade-up" data-aos-duration="1000">
                 <div class="col-lg-5 position-relative">
@@ -1122,8 +1124,8 @@ $imagePairs = [
 
         </div>
 
-    </section>
-    <section class="cta2">
+    </section> -->
+    <!-- <section class="cta2">
         <div class="containerFull">
 
             <div class="row align-items-center justify-content-center">
@@ -1144,9 +1146,9 @@ $imagePairs = [
             </div>
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="position-relative outline-bg">
+    <!-- <section class="position-relative outline-bg">
         <div class="containerFull">
             <h5 class="fontHeading fontWeight600 text_dark_gold text-center" data-aos="fade-up"
                 data-aos-duration="1000">
@@ -1222,8 +1224,8 @@ $imagePairs = [
 
 
         </div>
-    </section>
-    <section>
+    </section> -->
+    <!-- <section>
         <div class="containerFull overflow-hidden">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -1299,9 +1301,9 @@ $imagePairs = [
 
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section class="blackElement bgGrey pt-lg-0 counter">
+    <!-- <section class="blackElement bgGrey pt-lg-0 counter">
         <div class="containerFull">
             <div class="row">
                 <div class="col-lg-5" data-aos="zoom-in-left">
@@ -1417,8 +1419,8 @@ $imagePairs = [
                 </div>
             </div>
         </div>
-    </section>
-    <section>
+    </section> -->
+    <!-- <section>
         <div class="containerFull">
             <h3 class="small_heading text_primary text-center fontWeight600 aos-init aos-animate" data-aos="zoom-in-up">
                 Contact Us</h3>
@@ -1488,15 +1490,10 @@ $imagePairs = [
                 </div>
             </div>
         </div>
-    </section>
-    <?php include 'include/footer.php'; ?>
+    </section> -->
+
 
     </div>
-
-
-
-
-
     <?php include 'include/footer-links.php'; ?>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
